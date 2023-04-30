@@ -40,13 +40,16 @@
         border: none;
         outline: none;
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         width: 100%;
         padding: 15px;
     }
 
     .search-input::placeholder {
         color: #fff;
+        font-size: 18px;
+    /*     make it bold font*/
+        font-weight: 600;
     }
 </style>
 
