@@ -10,10 +10,10 @@
 
 <style>
     .card {
-        background-color: rgba(15,59,118,0.58);
-        background-image: linear-gradient(120deg, #3C8885BF 0%, rgba(80, 37, 66, 0.75) 100%);
+        /*background-color: rgba(15,59,118,0.58);*/
+        /*background-image: linear-gradient(120deg, #3C8885BF 0%, rgba(80, 37, 66, 0.75) 100%);*/
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
         padding: 20px;
         margin: 5px;
         min-width: 220px;
@@ -39,7 +39,8 @@
 
     .description {
         font-size: 16px;
-        color: #2c2020;
+        color: #818181;
+        margin-top: 10px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
