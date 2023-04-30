@@ -24,6 +24,8 @@
         background-color: rgba(33, 53, 71, 0.2);
         background-image: linear-gradient(120deg, #5B96E7CC 0%, #57A9B0CC 100%);
         border-radius: 25px;
+        /*add white outline*/
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.60);
         z-index: 2;
         padding: 10px;
     }
