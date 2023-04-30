@@ -21,8 +21,8 @@
         left: 36%;
         min-width: 400px;
         align-items: center;
-        background-color: rgba(33, 53, 71, 0.2);
-        background-image: linear-gradient(120deg, #5B96E7CC 0%, #57A9B0CC 100%);
+        background-color: rgba(33, 53, 72, 0.2);
+        background-image: linear-gradient(120deg, #29486BCC 0%, #57A9B0CC 100%);
         border-radius: 25px;
         /*add white outline*/
         box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.60);
