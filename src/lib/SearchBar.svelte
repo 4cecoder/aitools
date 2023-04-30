@@ -21,7 +21,8 @@
         left: 36%;
         min-width: 400px;
         align-items: center;
-        background-image: linear-gradient(120deg, #5b96e7 0%, #57a9b0 100%);
+        background-color: rgba(33, 53, 71, 0.2);
+        background-image: linear-gradient(120deg, #5B96E7CC 0%, #57A9B0CC 100%);
         border-radius: 25px;
         z-index: 2;
         padding: 10px;
