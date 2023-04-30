@@ -29,7 +29,7 @@
 
     .search-icon {
         color: #fff;
-        margin-right: 5px;
+        margin-right: 8px;
     }
 
     .search-input {
@@ -39,6 +39,7 @@
         color: #fff;
         font-size: 16px;
         width: 100%;
+        padding: 15px;
     }
 
     .search-input::placeholder {
