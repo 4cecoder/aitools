@@ -39,11 +39,11 @@
 
     .filter-item {
         display: flex;
-        background-color: rgba(116, 123, 255, 0.60);
+        background-color: #171D6499;
         margin-top: 4px;
         border-radius: 30px;
         padding: 10px;
-        max-width: 150px;
+        max-width: 185px;
         align-items: center;
         gap: 5px;
     }

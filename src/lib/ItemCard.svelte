@@ -11,10 +11,11 @@
 <style>
     .card {
         background-color: rgba(15,59,118,0.58);
-        background-image: linear-gradient(120deg, rgba(246, 211, 101, 0.75) 0%, rgba(253, 160, 133, 0.75) 100%);
+        background-image: linear-gradient(120deg, #3C8885BF 0%, rgba(80, 37, 66, 0.75) 100%);
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 20px;
+        margin: 5px;
         min-width: 220px;
         max-width: 300px;
         max-height: 350px;
@@ -33,12 +34,12 @@
     .title {
         font-size: 24px;
         font-weight: bold;
-        color: #333;
+        color: #c9c9c9;
     }
 
     .description {
         font-size: 16px;
-        color: #333;
+        color: #2c2020;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;

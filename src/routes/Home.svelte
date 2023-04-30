@@ -4,6 +4,9 @@
     import SearchBar from '../lib/SearchBar.svelte';
     import ItemCard from '../lib/ItemCard.svelte';
     import CategoryFilters from "../lib/CategoryFilters.svelte";
+    import searchQuery from '../lib/SearchBar.svelte';
+    import  {showSearchBar}  from "../stores.js";
+
 
     let items = [];
     let currentPage = 1;
@@ -88,7 +91,9 @@
     Ai Toolbox Search Engine
 </h1>
 
-<SearchBar on:search="{search}" />
+{#if $showSearchBar}
+    <SearchBar on:search="{search}" />
+{/if}
 <br />
 <CategoryFilters on:updateFilters="{updateFilters}" />
 <div class="grid">
