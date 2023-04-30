@@ -6,6 +6,7 @@
     width: 100%;
     left:0;
     top: 0;
+    z-index: 3;
 
     padding: 10px 20px;
     /* this is the magic for the top bar*/

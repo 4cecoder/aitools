@@ -10,7 +10,8 @@
 
 <style>
     .card {
-        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+        background-color: rgba(15,59,118,0.58);
+        background-image: linear-gradient(120deg, rgba(246, 211, 101, 0.75) 0%, rgba(253, 160, 133, 0.75) 100%);
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 20px;
@@ -56,7 +57,8 @@
     }
 
     .tag {
-        background-color: #fff;
+        /*cool gradient*/
+        background-color: #30d78c;
         padding: 2px 8px;
         border-radius: 20px;
     }
