@@ -16,7 +16,11 @@
     width: 93%;
     left: 30px;
     top: 10px;
-    border-radius:20px;
+    border-radius: 14px;
+
+    outline: 1px solid rgba(204, 204, 204, 0.40);
+
+
     /*margin-left:20px;*/
     /*margin-right:10px;*/
 
@@ -83,7 +87,7 @@
 
 <div class="top-bar">
   <a class="logo" href="/">Logo</a>
-  <a on:click="{toggleSearchBar}"><FontAwesomeIcon icon="{faSearch}" class="search-icon"  /></a>
+  <a on:click="{toggleSearchBar}"><FontAwesomeIcon icon="{faSearch}" size="{50}" class="search-icon"  /></a>
   <nav class="nav-links">
     <a class="nav-link" href="/home">Home</a>
     <a class="nav-link" href="/ai">AI</a>
