@@ -8,5 +8,80 @@
     "name": "AI",
     "title": "Artificial Intelligence",
     "definition": "The intelligence displayed by machines in performing tasks that typically require human intelligence, such as learning, problem-solving, decision-making, and language understanding. AI is achieved by developing algorithms and systems that can process, analyze, and understand large amounts of data and make decisions based on that data."
+  },
+  {
+    "name": "CUDA",
+    "title": "Compute Unified Device Architecture",
+    "definition": "CUDA is a way that computers can work on really hard and big problems by breaking them down into smaller pieces and solving them all at the same time. It helps the computer work faster and better by using special parts inside it called GPUs. It's like when you have lots of friends help you do a puzzle - it goes much faster than if you try to do it all by yourself. The term \"CUDA\" is a trademark of NVIDIA Corporation, which developed and popularized the technology."
+  },
+  {
+    "name": "Data Processing",
+    "title": "",
+    "definition": "The process of preparing raw data for use in a machine learning model, including tasks such as cleaning, transforming, and normalizing the data."
+  },
+  {
+    "name": "DL",
+    "title": "Deep Learning",
+    "definition": "A subfield of machine learning that uses deep neural networks with many layers to learn complex patterns from data."
+  },
+  {
+    "name": "Embedding",
+    "title": "",
+    "definition": "When we want a computer to understand language, we need to represent the words as numbers because computers can only understand numbers. An embedding is a way of doing that. Here's how it works: we take a word, like \"cat\", and convert it into a numerical representation that captures its meaning. We do this by using a special algorithm that looks at the word in the context of other words around it. The resulting number represents the word's meaning and can be used by the computer to understand what the word means and how it relates to other words. For example, the word \"kitten\" might have a similar embedding to \"cat\" because they are related in meaning. Similarly, the word \"dog\" might have a different embedding than \"cat\" because they have different meanings. This allows the computer to understand relationships between words and make sense of language."
+  },
+  {
+    "name": "Feature Engineering",
+    "title": "",
+    "definition": "The process of selecting and creating new features from the raw data that can be used to improve the performance of a machine learning model."
+  },
+  {
+    "name": "Freemium",
+    "title": "",
+    "definition": "You might see the term \"Freemium\" used often on this site. It simply means that the specific tool that you're looking at has both free and paid options. Typically there is very minimal, but unlimited, usage of the tool at a free tier with more access and features introduced in paid tiers."
+  },
+  {
+    "name": "GAN",
+    "title": "Generative Adversarial Network",
+    "definition": "A type of computer program that creates new things, such as images or music, by training two neural networks against each other. One network, called the generator, creates new data, while the other network, called the discriminator, checks the authenticity of the data. The generator learns to improve its data generation through feedback from the discriminator, which becomes better at identifying fake data. This back and forth process continues until the generator is able to create data that is almost impossible for the discriminator to tell apart from real data. GANs can be used for a variety of applications, including creating realistic images, videos, and music, removing noise from pictures and videos, and creating new styles of art."
+  },
+  {
+    "name": "Generative Art",
+    "title": "",
+    "definition": "Generative art is a form of art that is created using a computer program or algorithm to generate visual or audio output. It often involves the use of randomness or mathematical rules to create unique, unpredictable, and sometimes chaotic results."
+  },
+  {
+    "name": "GPT",
+    "title": "Generative Pre-trained Transformer",
+    "definition": "GPT stands for Generative Pretrained Transformer. It is a type of large language model developed by OpenAI."
+  },
+  {
+    "name": "GLTR",
+    "title": "Giant Language model Test Room",
+    "definition": "GLTR is a tool that helps people tell if a piece of text was written by a computer or a person. It does this by looking at how each word in the text is used and how likely it is that a computer would have chosen that word. GLTR is like a helper that shows you clues by coloring different parts of the sentence different colors. Green means the word is very likely to have been written by a person, yellow means it's not sure, red means it's more likely to have been written by a computer and violet means it's very likely to have been written by a computer."
+  },
+  {
+    "name": "GitHub",
+    "title": "",
+    "definition": "GitHub is a platform for hosting and collaborating on software projects"
+  },
+  {
+    "name": "Google Colab",
+    "title": "",
+    "definition": "Google Colab is an online platform that allows users to share and run Python scripts in the cloud"
+  },
+  {
+    "name": "GPU",
+    "title": "Graphics Processing Unit",
+    "definition": "A GPU, or graphics processing unit, is a special type of computer chip that is designed to handle the complex calculations needed to display images and video on a computer or other device. It's like the brain of your computer's graphics system, and it's really good at doing lots of math really fast. GPUs are used in many different types of devices, including computers, phones, and gaming consoles. They are especially useful for tasks that require a lot of processing power, like playing video games, rendering 3D graphics, or running machine learning algorithms."
+  },
+  {
+    "name": "Langchain",
+    "title": "",
+    "definition": "LangChain is a library that helps users connect artificial intelligence models to external sources of information. The tool allows users to chain together commands or queries across different sources, enabling the creation of agents or chatbots that can perform actions on a user's behalf. It aims to simplify the process of connecting AI models to external sources of information, enabling more complex and powerful applications of artificial intelligence."
+  },
+  {
+    "name": "LLM",
+    "title": "Large Language Model",
+    "definition": "A large language model is a type of machine learning model that is trained on a large amount of text data. It can be used to generate new text based on the patterns it has learned from the training data. Large language models are often used for tasks such as text generation, translation, and summarization."
   }
 ]
