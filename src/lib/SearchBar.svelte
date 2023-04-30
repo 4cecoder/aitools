@@ -22,7 +22,7 @@
         min-width: 400px;
         align-items: center;
         background-color: rgba(33, 53, 72, 0.2);
-        background-image: linear-gradient(120deg, #29486BCC 0%, #57A9B0CC 100%);
+        background-image: linear-gradient(120deg, rgba(9, 23, 35, 0.8) 0%, #0F1515CC 100%);
         border-radius: 25px;
         /*add white outline*/
         box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.60);
