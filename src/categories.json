@@ -1,0 +1,142 @@
+[
+  {
+    "title": "AI Detection",
+    "name": "ai_detection"
+  },
+  {
+    "title": "Aggregators",
+    "name": "aggregators"
+  },
+  {
+    "title": "Avatar",
+    "name": "avatar"
+  },
+  {
+    "title": "Chat",
+    "name": "chat"
+  },
+  {
+    "title": "Copywriting",
+    "name": "copywriting"
+  },
+  {
+    "title": "Finance",
+    "name": "finance"
+  },
+  {
+    "title": "For Fun",
+    "name": "for_fun"
+  },
+  {
+    "title": "Gaming",
+    "name": "gaming"
+  },
+  {
+    "title": "Generative Art",
+    "name": "generative_art"
+  },
+  {
+    "title": "Generative Code",
+    "name": "generative_code"
+  },
+  {
+    "title": "Generative Video",
+    "name": "generative_video"
+  },
+  {
+    "title": "Image Improvement",
+    "name": "image_improvement"
+  },
+  {
+    "title": "Image Scanning",
+    "name": "image_scanning"
+  },
+  {
+    "title": "Inspiration",
+    "name": "inspiration"
+  },
+  {
+    "title": "Marketing",
+    "name": "marketing"
+  },
+  {
+    "title": "Motion Capture",
+    "name": "motion_capture"
+  },
+  {
+    "title": "Music",
+    "name": "music"
+  },
+  {
+    "title": "Podcasting",
+    "name": "podcasting"
+  },
+  {
+    "title": "Productivity",
+    "name": "productivity"
+  },
+  {
+    "title": "Prompt Guides",
+    "name": "prompt_guides"
+  },
+  {
+    "title": "Research",
+    "name": "research"
+  },
+  {
+    "title": "Self-Improvement",
+    "name": "self_improvement"
+  },
+  {
+    "title": "Social Media",
+    "name": "social_media"
+  },
+  {
+    "title": "Speech-To-Text",
+    "name": "speech_to_text"
+  },
+  {
+    "title": "Text-To-Speech",
+    "name": "text_to_speech"
+  },
+  {
+    "title": "Text-To-Video",
+    "name": "text_to_video"
+  },
+  {
+    "title": "Translation",
+    "name": "translation"
+  },
+  {
+    "title": "Video Editing",
+    "name": "video_editing"
+  },
+  {
+    "title": "Voice Modulation",
+    "name": "voice_modulation"
+  },
+  {
+    "title": "Free",
+    "name": "free"
+  },
+  {
+    "title": "Freemium",
+    "name": "freemium"
+  },
+  {
+    "title": "GitHub",
+    "name": "github"
+  },
+  {
+    "title": "Google Colab",
+    "name": "google_colab"
+  },
+  {
+    "title": "Open Source",
+    "name": "open_source"
+  },
+  {
+    "title": "Paid",
+    "name": "paid"
+  }
+]

@@ -3,22 +3,29 @@
     import { onMount } from 'svelte';
     import SearchBar from '../lib/SearchBar.svelte';
     import ItemCard from '../lib/ItemCard.svelte';
+    import CategoryFilters from "../lib/CategoryFilters.svelte";
 
     let items = [];
     let currentPage = 1;
     let itemsPerPage = 48;
 
     let filteredItems = [];
+    let selectedCategories = {};
 
     function search(event) {
         const query = event.detail.toLowerCase();
 
         filteredItems = items.filter(item => {
+            const categoryMatch = Object.entries(selectedCategories).every(
+                ([category, isSelected]) =>
+                    !isSelected || item.tags.toLowerCase().includes(category)
+            );
+
             const titleMatch = item.title.toLowerCase().includes(query);
             const descriptionMatch = item.description.toLowerCase().includes(query);
             const tagMatch = item.tags.toLowerCase().includes(query);
 
-            return titleMatch || descriptionMatch || tagMatch;
+            return (titleMatch || descriptionMatch || tagMatch) && categoryMatch;
         });
     }
 
@@ -45,6 +52,11 @@
 
     function previousPage() {
         currentPage -= 1;
+    }
+
+    function updateFilters(event) {
+        selectedCategories = event.detail;
+        search({ detail: searchQuery });
     }
 </script>
 
@@ -78,7 +90,7 @@
 
 <SearchBar on:search="{search}" />
 <br />
-
+<CategoryFilters on:updateFilters="{updateFilters}" />
 <div class="grid">
     {#each filteredItems.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage) as item}
         <ItemCard
