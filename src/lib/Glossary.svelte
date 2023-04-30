@@ -20,6 +20,7 @@
     .search-container {
         display: flex;
         justify-content: center;
+        margin-top: 100px;
         margin-bottom: 1rem;
     }
 
