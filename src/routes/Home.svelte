@@ -64,6 +64,12 @@
 </script>
 
 <style>
+    .home-container{
+        margin: 0 auto;
+        margin-top: 100px;
+        max-width: 1200px;
+        padding: 0 20px;
+    }
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -87,14 +93,15 @@
     }
 </style>
 
-<h1 class="page-intro">
-    Ai Toolbox Search Engine
-</h1>
+<!--<h1 class="page-intro">-->
+<!--    Ai Toolbox Search Engine-->
+<!--</h1>-->
 
 {#if $showSearchBar}
     <SearchBar on:search="{search}" />
 {/if}
 <br />
+<div class="home-container">
 <CategoryFilters on:updateFilters="{updateFilters}" />
 <div class="grid">
     {#each filteredItems.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage) as item}
@@ -116,4 +123,5 @@
     {#if currentPage * itemsPerPage < items.length}
         <button on:click={nextPage}>Next</button>
     {/if}
+</div>
 </div>
