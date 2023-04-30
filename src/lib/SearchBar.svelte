@@ -1,7 +1,16 @@
 <!-- src/lib/SearchBar.svelte -->
 <script>
+    import { createEventDispatcher } from 'svelte';
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
     import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
+    const dispatch = createEventDispatcher();
+
+    let searchQuery = '';
+
+    function updateSearch() {
+        dispatch('search', searchQuery);
+    }
 </script>
 
 <style>
@@ -34,5 +43,5 @@
 
 <div class="search-bar">
     <FontAwesomeIcon icon="{faSearch}" class="search-icon" />
-    <input class="search-input" type="text" placeholder="Search..." />
+    <input class="search-input" type="text" placeholder="Search..." bind:value="{searchQuery}" on:input="{updateSearch}" />
 </div>

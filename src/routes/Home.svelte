@@ -8,6 +8,20 @@
     let currentPage = 1;
     let itemsPerPage = 48;
 
+    let filteredItems = [];
+
+    function search(event) {
+        const query = event.detail.toLowerCase();
+
+        filteredItems = items.filter(item => {
+            const titleMatch = item.title.toLowerCase().includes(query);
+            const descriptionMatch = item.description.toLowerCase().includes(query);
+            const tagMatch = item.tags.toLowerCase().includes(query);
+
+            return titleMatch || descriptionMatch || tagMatch;
+        });
+    }
+
     onMount(async () => {
         const response = await fetch('/data.csv');
         const csvText = await response.text();
@@ -22,6 +36,7 @@
             });
             return item;
         });
+        filteredItems = items;
     });
 
     function nextPage() {
@@ -61,11 +76,11 @@
     Ai Toolbox Search Engine
 </h1>
 
-<SearchBar />
+<SearchBar on:search="{search}" />
 <br />
 
 <div class="grid">
-    {#each items.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage) as item}
+    {#each filteredItems.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage) as item}
         <ItemCard
                 previewImage={item.image}
                 directLink={item.link}
