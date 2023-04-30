@@ -4,7 +4,7 @@
 
     const dispatch = createEventDispatcher();
     let filters = {};
-    let isExpanded = true;
+    let isExpanded = false;
 
     function updateFilters() {
         dispatch("updateFilters", filters);
