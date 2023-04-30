@@ -1,0 +1,12 @@
+[
+  {
+    "name": "API",
+    "title": "Application Programming Interface",
+    "definition": "An API, or application programming interface, is a set of rules and protocols that allows different software programs to communicate and exchange information with each other. It acts as a kind of intermediary, enabling different programs to interact and work together, even if they are not built using the same programming languages or technologies. API's provide a way for different software programs to talk to each other and share data, helping to create a more interconnected and seamless user experience."
+  },
+  {
+    "name": "AI",
+    "title": "Artificial Intelligence",
+    "definition": "The intelligence displayed by machines in performing tasks that typically require human intelligence, such as learning, problem-solving, decision-making, and language understanding. AI is achieved by developing algorithms and systems that can process, analyze, and understand large amounts of data and make decisions based on that data."
+  }
+]

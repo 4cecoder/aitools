@@ -3,6 +3,7 @@
 import TopBar from "./lib/TopBar.svelte";
 import {Router, Route} from "svelte-routing";
 import Home from "./routes/Home.svelte";
+import Glossary from "./lib/Glossary.svelte";
 </script>
 
 <main>
@@ -13,7 +14,7 @@ import Home from "./routes/Home.svelte";
 <!--        <Route path="/ai" component="{AI}" />-->
 <!--        <Route path="/news" component="{News}" />-->
 <!--        <Route path="/learn" component="{Learn}" />-->
-<!--        <Route path="/glossary" component="{Glossary}" />-->
+        <Route path="/glossary" component="{Glossary}" />
 <!--        <Route path="/submit" component="{Submit}" />-->
     </Router>
 
