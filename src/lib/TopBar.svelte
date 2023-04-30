@@ -14,9 +14,10 @@
   .top-bar {
     position: fixed;
     width: 93%;
+    max-height: 60px;
     left: 30px;
     top: 10px;
-    border-radius: 14px;
+    border-radius: 8px;
 
     outline: 1px solid rgba(204, 204, 204, 0.40);
 
@@ -31,7 +32,7 @@
     /*background-color: #21014B54;*/
     /*background-image: linear-gradient(315deg, #6daddb 0%, #21014B54 74%);    box-shadow: 0 2px 4px rgba(71, 42, 122, 0.1);*/
 
-    background-color: rgba(19, 15, 64, 0.25);
+    background-color: rgba(19, 15, 61, 0.25);
     background-image: linear-gradient(315deg, rgba(19, 15, 64, 0.25) 0%, rgba(0, 0, 0, 0.25) 74%);
 
     /* add blur */
@@ -60,7 +61,7 @@
   }
 
   .nav-link {
-    font-size: 16px;
+    font-size: 13px;
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;

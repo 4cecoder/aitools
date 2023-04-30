@@ -70,10 +70,10 @@
         <a href="{directLink}"><img class="preview-image" src="{previewImage}" alt="{title}" /></a>
     {/if}
     <div class="title">{title}</div>
-    <div class="description">{description}</div>
     <div class="tags">
         {#each tags.split(',') as tag (tag)}
             <div class="tag">{tag.trim()}</div>
         {/each}
+    <div class="description">{description}</div>
     </div>
 </div>
