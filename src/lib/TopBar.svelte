@@ -46,7 +46,7 @@
     font-size: 32px;
     font-weight: bold;
     text-decoration: none;
-    color: #7efc4d;
+    color: #76f1ce;
     /*background-image: linear-gradient(45deg, #7efc4d 0%, #3db777 100%);*/
     text-shadow: 2px 2px 4px #000000;
     transition: color 0.3s ease;
@@ -87,7 +87,7 @@
 </style>
 
 <div class="top-bar">
-  <a class="logo" href="/">Logo</a>
+  <a class="logo" href="/">AiEngine</a>
   <a on:click="{toggleSearchBar}"><FontAwesomeIcon icon="{faSearch}" size="{50}" class="search-icon"  /></a>
   <nav class="nav-links">
     <a class="nav-link" href="/home">Home</a>
