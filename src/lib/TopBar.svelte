@@ -2,7 +2,7 @@
 <script>
   import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
   import { faSearch } from "@fortawesome/free-solid-svg-icons";
-  import  {showSearchBar } from "../stores.js";
+  import  { showSearchBar } from "../stores.js";
   function toggleSearchBar() {
     console.log("Search icon clicked");
     $showSearchBar = !$showSearchBar;
