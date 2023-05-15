@@ -1,5 +1,22 @@
 # Svelte + TS + Vite
 
+tools data:
+```json
+{
+"Name": "",
+"Direct Link": "",
+"Hashtags": "",
+"Description": "",
+"Pricing model": "",
+"Coupon": "",
+"Has Coupon": "",
+"Has Free Trial": "",
+"Realated Videos": ""
+}
+```
+
+
+
 This template should help get you started developing with Svelte and TypeScript in Vite.
 
 ## Recommended IDE Setup
