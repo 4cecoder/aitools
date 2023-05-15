@@ -1,2 +1,2 @@
 cd pocketbase/examples/base/
-./base serve
+go build || ./base serve
