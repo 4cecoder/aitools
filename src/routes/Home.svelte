@@ -11,6 +11,8 @@
     let items = [];
     let currentPage = 1;
     let itemsPerPage = 48;
+    let hashtags = [];
+    let directLink = "";
 
     let filteredItems = [];
     let selectedCategories = {};
@@ -33,18 +35,17 @@
     }
 
     onMount(async () => {
-        const response = await fetch('/data.csv');
-        const csvText = await response.text();
-        const lines = csvText.trim().split('\n');
-        const headers = lines.shift().split(',');
+        const response = await fetch('/data.json');
+        const jsonData = await response.json();
 
-        items = lines.map((line) => {
-            const values = line.split(',');
-            const item = {};
-            headers.forEach((header, index) => {
-                item[header] = values[index];
-            });
-            return item;
+        items = jsonData.map((item) => {
+            return {
+                title: item.name,
+                link: item.direct_Link,
+                tags: item.hashtags,
+                description: item.description,
+                image: '', // Add image property in your JSON data if available
+            };
         });
         filteredItems = items;
     });

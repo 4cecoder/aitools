@@ -22,6 +22,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/svelte-fontawesome": "^0.2.0",
     "@tinymce/tinymce-svelte": "^1.0.1",
+    "@types/node": "^20.1.5",
     "pocketbase": "^0.14.4",
     "svelte-routing": "^1.6.0",
     "svelte-spa-router": "^3.3.0",
