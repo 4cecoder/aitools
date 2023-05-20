@@ -18,11 +18,12 @@
 <style>
     .filters-container {
         position: relative;
-        /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
-        /*border-radius: 10px;*/
+        background-color: #352e44;
+        border-radius: 10px;
         overflow: hidden;
         transition: max-height 0.5s ease;
         margin-bottom: 10px;
+        margin-right: 20px;
     }
 
     .filters-container.collapsed {
@@ -31,31 +32,38 @@
     }
 
     .filters {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
         padding: 8px;
+        gap: 10px;
     }
 
     .filter-item {
         display: flex;
-        background-color: #171D6499;
-        margin-top: 4px;
-        border-radius: 30px;
-        padding: 10px;
-        max-width: 185px;
         align-items: center;
-        gap: 5px;
+        background-color: #664d70;
+        border-radius: 20px;
+        padding: 8px 12px;
+        max-width: 200px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .filter-item input {
+        margin-right: 8px;
     }
 
     .toggle-button {
         position: absolute;
-        background-color: darkslateblue;
-
-        top: -5px;
+        background-color: #352e44;
+        color: #fff;
+        top: 50%;
         right: 10px;
+        transform: translateY(-50%);
         border-radius: 20px;
-        padding: 10px;
+        padding: 8px 16px;
         cursor: pointer;
     }
 </style>

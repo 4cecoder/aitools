@@ -1,4 +1,11 @@
 <!--src/lib/Login.svelte-->
+
+<script>
+    import { onMount } from "svelte"
+</script>
+
+
+
 <!--<script>-->
 <!--    import { onMount } from 'svelte';-->
 <!--    import PocketBase from 'pocketbase';-->
