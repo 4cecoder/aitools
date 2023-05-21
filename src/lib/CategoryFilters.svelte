@@ -5,6 +5,7 @@
     const dispatch = createEventDispatcher();
     let filters = {};
     let isExpanded = false;
+    let clickedCategory = new Map()
 
     function updateFilters() {
         dispatch("updateFilters", filters);
@@ -13,16 +14,23 @@
     function toggleFilters() {
         isExpanded = !isExpanded;
     }
+
+    function toggleCheckbox(category) {
+        filters[category.name] = !filters[category.name];
+        clickedCategory = category.name;
+        updateFilters();
+    }
 </script>
 
 <style>
     .filters-container {
         position: relative;
-        /*background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
-        /*border-radius: 10px;*/
+        background-color: #352e44;
+        border-radius: 10px;
         overflow: hidden;
         transition: max-height 0.5s ease;
         margin-bottom: 10px;
+        margin-right: 20px;
     }
 
     .filters-container.collapsed {
@@ -31,45 +39,53 @@
     }
 
     .filters {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
         padding: 8px;
+        gap: 10px;
     }
 
     .filter-item {
         display: flex;
-        background-color: #171D6499;
-        margin-top: 4px;
-        border-radius: 30px;
-        padding: 10px;
-        max-width: 185px;
         align-items: center;
-        gap: 5px;
+        background-color: #664d70;
+        border-radius: 20px;
+        padding: 8px 12px;
+        max-width: 200px;
+        font-size: 14px;
+        color: #fff;
+        transition: background-color 0.3s;
     }
 
-    .toggle-button {
-        position: absolute;
-        background-color: darkslateblue;
-
-        top: -5px;
-        right: 10px;
-        border-radius: 20px;
-        padding: 10px;
+    .filter-item:hover {
         cursor: pointer;
+        background-color: #4a4a4a;
+    }
+
+    .filter-item.clicked {
+        background-color: gray;
+    }
+
+    .filter-item.unchecked {
+        background-color: #664d70;
     }
 </style>
 
 <div class="filters-container" class:collapsed="{!isExpanded}">
     <div class="filters">
         {#each categories as category}
-            <label class="filter-item">
+            <label
+                    class="filter-item {clickedCategory === category.name ? 'clicked' : ''}"
+                    on:click="{() => toggleCheckbox(category)}"
+            >
                 <input
                         type="checkbox"
                         bind:checked="{filters[category.name]}"
-                        on:change="{updateFilters}"
+                        style="display: none;"
                 />
-                {category.title}
+                <span>{category.title}</span>
             </label>
         {/each}
     </div>
