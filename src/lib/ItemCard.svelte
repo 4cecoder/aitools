@@ -135,7 +135,7 @@
     {/if}
 
     {#if directLink}
-        <a href="{directLink}">
+        <a href="{directLink}" target="_blank">
             <div class="title">{title}</div>
         </a>
     {/if}

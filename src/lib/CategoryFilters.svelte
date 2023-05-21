@@ -5,6 +5,7 @@
     const dispatch = createEventDispatcher();
     let filters = {};
     let isExpanded = false;
+    let clickedCategory = new Map()
 
     function updateFilters() {
         dispatch("updateFilters", filters);
@@ -12,6 +13,12 @@
 
     function toggleFilters() {
         isExpanded = !isExpanded;
+    }
+
+    function toggleCheckbox(category) {
+        filters[category.name] = !filters[category.name];
+        clickedCategory = category.name;
+        updateFilters();
     }
 </script>
 
@@ -47,37 +54,38 @@
         border-radius: 20px;
         padding: 8px 12px;
         max-width: 200px;
-        color: #fff;
         font-size: 14px;
-    }
-
-    .filter-item input {
-        margin-right: 8px;
-    }
-
-    .toggle-button {
-        position: absolute;
-        background-color: #352e44;
         color: #fff;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-        border-radius: 20px;
-        padding: 8px 16px;
+        transition: background-color 0.3s;
+    }
+
+    .filter-item:hover {
         cursor: pointer;
+        background-color: #4a4a4a;
+    }
+
+    .filter-item.clicked {
+        background-color: gray;
+    }
+
+    .filter-item.unchecked {
+        background-color: #664d70;
     }
 </style>
 
 <div class="filters-container" class:collapsed="{!isExpanded}">
     <div class="filters">
         {#each categories as category}
-            <label class="filter-item">
+            <label
+                    class="filter-item {clickedCategory === category.name ? 'clicked' : ''}"
+                    on:click="{() => toggleCheckbox(category)}"
+            >
                 <input
                         type="checkbox"
                         bind:checked="{filters[category.name]}"
-                        on:change="{updateFilters}"
+                        style="display: none;"
                 />
-                {category.title}
+                <span>{category.title}</span>
             </label>
         {/each}
     </div>
