@@ -12,7 +12,7 @@ import Login from "./lib/Login.svelte";
     <Router>
         <Route path="/" component="{Home}" />
         <Route path="/home" component="{Home}" />
-        <Route path="/login" componet="{Login}" />
+        <Route path="/login" component="{Login}" />
 <!--        <Route path="/ai" component="{AI}" />-->
 <!--        <Route path="/news" component="{News}" />-->
 <!--        <Route path="/learn" component="{Learn}" />-->

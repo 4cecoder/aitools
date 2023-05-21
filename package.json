@@ -25,6 +25,7 @@
     "@sveltejs/kit": "^1.18.0",
     "@tinymce/tinymce-svelte": "^1.0.1",
     "@types/node": "^20.1.5",
+    "firebase": "^9.22.0",
     "node-appwrite": "^9.0.0",
     "pocketbase": "^0.14.4",
     "svelte-routing": "^1.6.0",
