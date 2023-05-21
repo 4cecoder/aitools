@@ -44,6 +44,7 @@
                 link: item.direct_Link,
                 tags: item.hashtags,
                 description: item.description,
+                price: item.pricing_model,
                 image: '', // Add image property in your JSON data if available
             };
         });
@@ -65,12 +66,14 @@
 </script>
 
 <style>
-    .home-container{
+    .home-container {
         margin: 0 auto;
         margin-top: 100px;
         max-width: 1200px;
         padding: 0 20px;
+        color: black;
     }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
